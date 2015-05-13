@@ -18,7 +18,7 @@
       "location": "/rest"
     },
     "MQTT": {
-      "url": "127.0.0.1:1883",
+      "url": "tcp://127.0.0.1:1883",
       "prefix": "/demo-dgw"
     }
   }
