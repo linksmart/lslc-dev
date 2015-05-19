@@ -53,7 +53,7 @@ function echo_if {
 #
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-cd $DIR
+cd "$DIR"
 
 echo "Checking required software"
 echo " -> Checking git... $(echo_if $(program_is_installed git))"
