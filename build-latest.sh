@@ -1,8 +1,8 @@
 #!/bin/bash -ex
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-mkdir $DIR/build
-cd $DIR/build
+mkdir "$DIR/build"
+cd "$DIR/build"
 
 export GOPATH=`pwd`
 
@@ -14,15 +14,15 @@ git clone https://linksmart.eu/redmine/linksmart-opensource/linksmart-local-conn
 go get github.com/mitchellh/gox
 
 # setup environment
-$DIR/setup.sh
+"$DIR/setup.sh"
 
 # build
-$DIR/release.sh "latest"
+"$DIR/release.sh" "latest"
 
 # clean up
-rm -rf $DIR/build/
+rm -rf "$DIR/build/"
 
 echo "Latest build is available in ./dist:"
-ls -1 $DIR/dist
+ls -1 "$DIR/dist"
 
 exit 0
