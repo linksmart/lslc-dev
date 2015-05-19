@@ -58,7 +58,7 @@ cd "$DIR"
 echo "Checking required software"
 echo " -> Checking git... $(echo_if $(program_is_installed git))"
 echo " -> Checking grunt... $(echo_if $(program_is_installed grunt))"
-echo " -> Checking grip... $(echo_if $(program_is_installed grip))"
+#echo " -> Checking grip... $(echo_if $(program_is_installed grip))"
 
 
 echo -n " -> dashboard repository... "
