@@ -63,18 +63,18 @@ echo " -> Checking grip... $(echo_if $(program_is_installed grip))"
 
 echo -n " -> dashboard repository... "
 if [ -d "$PWD/static/dashboard" ]; then
-    pushd $PWD/static/dashboard >> /dev/null
+    pushd "$PWD/static/dashboard" >> /dev/null
     git pull >> /dev/null
     popd >> /dev/null
 else
-    pushd $PWD/static >> /dev/null
+    pushd "$PWD/static" >> /dev/null
     git clone https://linksmart.eu/redmine/linksmart-opensource/linksmart-local-connect/dgw-dashboard.git dashboard >> /dev/null
     popd >> /dev/null
 fi
 echo_pass
 
 echo "Building dashboard"
-pushd $PWD/static/dashboard >> /dev/null
+pushd "$PWD/static/dashboard" >> /dev/null
 npm install .
 grunt
 popd >> /dev/null
