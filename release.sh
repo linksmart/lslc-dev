@@ -1,8 +1,8 @@
 #!/bin/bash -e
 
 VERSION=$1
-OSARCHS=( "linux/amd64" );
-#OSARCHS=( "darwin/amd64" "linux/amd64" "linux/arm" "windows/amd64" "windows/386" );
+#OSARCHS=( "linux/amd64" );
+OSARCHS=( "darwin/amd64" "linux/amd64" "linux/arm" "windows/amd64" "windows/386" );
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd "$DIR"
 
