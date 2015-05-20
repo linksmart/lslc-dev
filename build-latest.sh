@@ -5,6 +5,7 @@ mkdir "$DIR/build"
 cd "$DIR/build"
 
 export GOPATH=`pwd`
+echo "GOROOT: $GOROOT"
 
 # Project code
 mkdir -p src/linksmart.eu/lc 
@@ -13,7 +14,7 @@ git clone https://linksmart.eu/redmine/linksmart-opensource/linksmart-local-conn
 
 # Install build dependencies
 go get github.com/mitchellh/gox
-go get github.com/tools/godep
+#go get github.com/tools/godep
 #godep go build
 
 
