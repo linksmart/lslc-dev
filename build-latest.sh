@@ -14,7 +14,7 @@ git clone https://linksmart.eu/redmine/linksmart-opensource/linksmart-local-conn
 # Install build dependencies
 go get github.com/mitchellh/gox
 go get github.com/tools/godep
-godep go build
+#godep go build
 
 
 # setup environment
