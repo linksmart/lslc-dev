@@ -28,3 +28,11 @@ To trigger build of all architectures call:
 
 The builds will be found in ./dist
 
+
+VERSIONING
+
+This step can be skipped if you don't need versioning. Maven is used for versioning.
+You can install a versioned version of the builds into your local Maven repository with:
+mvn install
+
+
