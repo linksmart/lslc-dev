@@ -11,18 +11,16 @@ echo "GOROOT: $GOROOT"
 mkdir -p src/linksmart.eu/lc 
 git clone https://linksmart.eu/redmine/linksmart-opensource/linksmart-local-connect/lslc-core.git src/linksmart.eu/lc/core
 
+# Get the version from pom.xml
+VERSION=$(xmllint --xpath "string(//version)" "$DIR/pom.xml")
 
-# Install build dependencies
-go get github.com/mitchellh/gox
-gox -build-toolchain
-go get github.com/tools/godep
-godep go build
+echo "VERSION: $VERSION"
 
 # setup environment
 "$DIR/setup.sh"
 
 # build
-"$DIR/release.sh" "latest"
+"$DIR/release.sh" "$VERSION"
 
 # clean up
 rm -rf "$DIR/build/"

@@ -6,18 +6,17 @@
 	<version>0.0.1-SNAPSHOT</version>
 </parent>
 
-	<groupId>eu.linksmart.lc.distribution</groupId>
-	<artifactId>eu.linksmart.lc.distribution.suite</artifactId>
-	<version>0.2.0-SNAPSHOT</version>
-	<packaging>pom</packaging>
-	<name>LS LC suite - all supported architectures</name>
-        <description>Triggers Maven versioning and artifact creation for all architectures</description>
-
-	<modules>
-		<module>distribution-linux-amd64</module>
-		<module>distribution-linux-arm</module>
-		<module>distribution-darwin-amd64</module>
-		<module>distribution-windows-amd64</module>
-		<module>distribution-windows-386</module>
-	</modules>
+<groupId>eu.linksmart.lc.distribution</groupId>
+<artifactId>eu.linksmart.lc.distribution.suite</artifactId>
+<version>0.2.0-SNAPSHOT</version>
+<packaging>pom</packaging>
+<name>LS LC suite - all supported architectures</name>
+    <description>Triggers Maven versioning and artifact creation for all architectures</description>
+<modules>
+	<module>distribution-linux-amd64</module>
+	<module>distribution-linux-arm</module>
+	<module>distribution-darwin-amd64</module>
+	<module>distribution-windows-amd64</module>
+	<module>distribution-windows-386</module>
+</modules>
 </project> 
