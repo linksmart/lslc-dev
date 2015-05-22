@@ -26,6 +26,11 @@
 					<type>zip</type>
 					<classifier>distribution</classifier>
 				</artifact>
+				<artifact>
+					<file>../dist/lslc-latest_darwin_amd64.tar.gz</file>
+					<type>tar.gz</type>
+					<classifier>distribution</classifier>
+				</artifact>
 			</artifacts>
 			</configuration>
 			<executions>
