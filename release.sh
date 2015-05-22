@@ -86,8 +86,8 @@ do
     # remove mac crap
     find "$d/" -type f -name "._*" -exec rm -f {} \;
 
-    cd "$DIR/dist" && /usr/bin/zip -9 -r "${p}.zip" "$p"
-    cd "$DIR/dist" && /usr/bin/tar -zcvf "${p}.tar.gz" "$p"
+    cd "$DIR/dist" && zip -9 -r "${p}.zip" "$p"
+    cd "$DIR/dist" && tar -zcvf "${p}.tar.gz" "$p"
     rm -rf "$d"
 done
 
