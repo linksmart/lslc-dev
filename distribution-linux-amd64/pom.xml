@@ -22,12 +22,12 @@
 			<configuration>
 			<artifacts>
 				<artifact>
-					<file>../dist/lslc-latest_linux_amd64.zip</file>
+					<file>../dist/lslc-${parent.version}_linux_amd64.zip</file>
 					<type>zip</type>
 					<classifier>distribution</classifier>
 				</artifact>
 				<artifact>
-					<file>../dist/lslc-latest_linux_amd64.tar.gz</file>
+					<file>../dist/lslc-${parent.version}_linux_amd64.tar.gz</file>
 					<type>tar.gz</type>
 					<classifier>distribution</classifier>
 				</artifact>
