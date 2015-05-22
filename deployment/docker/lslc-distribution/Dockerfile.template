@@ -1,0 +1,6 @@
+FROM lslc/base:latest
+MAINTAINER Karl Catewicz "catewicz@fit.fraunhofer.de"
+RUN mkdir -p ${LSLC_HOME}
+ADD $LSLC_DIST_FILE ${LSLC_HOME}
+WORKDIR ${LSLC_HOME}
+EXPOSE 8080 8081 8082
