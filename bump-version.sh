@@ -11,4 +11,4 @@ CUR=$1
 NEW=$2
 
 echo "Bumping version from $CUR to $NEW..."
-find distribution-* -type f -print0 | xargs -0 sed -i '' 's|'${CUR}'|'${NEW}'|g'
+find pom.xml distribution-* -type f -print0 | xargs -0 sed -i '' 's|'${CUR}'|'${NEW}'|g'
