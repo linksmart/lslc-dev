@@ -43,10 +43,10 @@ do
             gb build all
 
             # move
-            mv bin/device-gateway ${d}
-            mv bin/resource-catalog ${d}
-            mv bin/service-catalog ${d}
-            mv bin/service-registrator ${d}
+            mv bin/device-gateway "${d}"
+            mv bin/resource-catalog "${d}"
+            mv bin/service-catalog "${d}"
+            mv bin/service-registrator "${d}"
         else
             # cross-compile
             echo "cross build for ${os}/${arch}..."
@@ -55,15 +55,15 @@ do
             # move
             if [ ${GOOS} == "windows" ]; then
                 # windowzz
-                mv bin/device-gateway-${os}-${arch}.exe ${d}/device-gateway.exe
-                mv bin/resource-catalog-${os}-${arch}.exe ${d}/resource-catalog.exe
-                mv bin/service-catalog-${os}-${arch}.exe ${d}/service-catalog.exe
-                mv bin/service-registrator-${os}-${arch}.exe ${d}/service-registrator.exe
+                mv bin/device-gateway-${os}-${arch}.exe "${d}"/device-gateway.exe
+                mv bin/resource-catalog-${os}-${arch}.exe "${d}"/resource-catalog.exe
+                mv bin/service-catalog-${os}-${arch}.exe "${d}"/service-catalog.exe
+                mv bin/service-registrator-${os}-${arch}.exe "${d}"/service-registrator.exe
             else
-                mv bin/device-gateway-${os}-${arch} ${d}/device-gateway
-                mv bin/resource-catalog-${os}-${arch} ${d}/resource-catalog
-                mv bin/service-catalog-${os}-${arch} ${d}/service-catalog
-                mv bin/service-registrator-${os}-${arch} ${d}/service-registrator
+                mv bin/device-gateway-${os}-${arch} "${d}"/device-gateway
+                mv bin/resource-catalog-${os}-${arch} "${d}"/resource-catalog
+                mv bin/service-catalog-${os}-${arch} "${d}"/service-catalog
+                mv bin/service-registrator-${os}-${arch} "${d}"/service-registrator
             fi
         fi
         popd
