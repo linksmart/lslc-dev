@@ -22,8 +22,8 @@ fi
 
 # get the code
 git clone https://linksmart.eu/redmine/linksmart-opensource/linksmart-local-connect/lslc-core.git 
-PROJECT_DIR=${DIR}/lslc-core
-cd ${PROJECT_DIR}
+PROJECT_DIR="${DIR}/lslc-core"
+cd "${PROJECT_DIR}"
 
 for os in "${GOOS[@]}"
 do
