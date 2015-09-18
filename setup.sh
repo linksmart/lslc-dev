@@ -79,5 +79,10 @@ npm install .
 grunt
 popd >> /dev/null
 
+echo " -> Checking gb..."
+  if [ $(program_is_installed gb) -eq 0 ]; then
+    go get -u github.com/constabulary/gb/...
+  fi
+
 echo "DONE!"
 exit 0

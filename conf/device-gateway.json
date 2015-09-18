@@ -1,7 +1,7 @@
 {
   "id": "demo-dgw",
   "description": "Example Gateway",
-  "publicAddr": "fqdn-of-the-host",
+  "publicEndpoint": "http://fqdn-of-the-host:8080",
   "staticDir": "./static",
   "catalog": [
     {

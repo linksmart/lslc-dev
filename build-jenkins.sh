@@ -7,10 +7,6 @@ cd "$DIR/build"
 export GOPATH=`pwd`
 echo "GOROOT: $GOROOT"
 
-# Project code
-mkdir -p src/linksmart.eu/lc 
-git clone https://linksmart.eu/redmine/linksmart-opensource/linksmart-local-connect/lslc-core.git src/linksmart.eu/lc/core
-
 # Get the version from pom.xml
 VERSION=$(xmllint --xpath "string(//project/version)" "$DIR/pom.xml")
 
