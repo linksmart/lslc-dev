@@ -1,10 +1,8 @@
 #!/bin/bash -e
 
 VERSION=$1
-#GOOS=("linux" "darwin" "windows");
-#GOARCH=("amd64" "386" "arm")
-GOOS=("windows");
-GOARCH=("amd64")
+GOOS=("linux" "darwin" "windows")
+GOARCH=("amd64" "386" "arm")
 MGOOS=`go env GOOS`
 MGORCH=`go env GOARCH`
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
