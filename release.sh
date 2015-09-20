@@ -63,7 +63,7 @@ do
             env GOOS=${os} GOARCH=${arch} gb build all
 
             # move
-            if [ ${GOOS} == "windows" ]; then
+            if [ ${os} == "windows" ]; then
                 # windowzz
                 mv bin/device-gateway-${os}-${arch}.exe "${d}/device-gateway.exe"
                 mv bin/resource-catalog-${os}-${arch}.exe "${d}/resource-catalog.exe"
