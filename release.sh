@@ -27,6 +27,18 @@ for os in "${GOOS[@]}"
 do
     for arch in "${GOARCH[@]}"
     do
+        # skip irrelevant combinations
+        # darwin: no 386 or arm
+        if [ ${os} == "darwin" ]; then
+            if [ ${arch} == "386" ] || [ ${arch} == "arm" ]; then
+                continue
+            fi
+        fi
+        # windows: no arm
+        if [ ${os} == "windows" ] && [ ${arch} == "arm" ]; then
+            continue
+        fi
+
         suffix=`echo "${os}/${arch}" | tr / _`
         p="lslc-${VERSION}_${suffix}"
         d="${DIR}/dist/${p}"
