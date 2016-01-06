@@ -6,6 +6,7 @@ export LC_ALL=C
 if [ "$#" -ne 2 ]
 then
 	echo "usage: $0 CURRENT_VERSION NEW_VERSION"
+	exit 1
 fi
 CUR=$1
 NEW=$2
