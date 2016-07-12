@@ -4,7 +4,7 @@
 # Simple script to add copyright header to the source files
 ############################################################
 
-COPYRIGHT="// Copyright 2016 Fraunhofer Insitute for Applied Information Technology FIT"
+COPYRIGHT="// Copyright 2016 Fraunhofer Institute for Applied Information Technology FIT"
 
 echo $COPYRIGHT > copyright-header
 echo "" >> copyright-header
