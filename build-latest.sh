@@ -11,13 +11,6 @@ echo "GOROOT: $GOROOT"
 mkdir -p src/linksmart.eu/lc 
 git clone https://linksmart.eu/redmine/linksmart-opensource/linksmart-local-connect/lslc-core.git src/linksmart.eu/lc/core
 
-
-# Install build dependencies
-go get github.com/mitchellh/gox
-gox -build-toolchain
-go get github.com/tools/godep
-godep go build
-
 # setup environment
 "$DIR/setup.sh"
 

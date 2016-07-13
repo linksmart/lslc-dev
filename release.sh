@@ -122,6 +122,10 @@ do
         #cp -R ${DIR}/docs $d/
         #cp wiki.pdf $d/
 
+        # copy license and notice
+        cp "$PROJECT_DIR/LICENSE" "$d"
+        cp "$PROJECT_DIR/NOTICE" "$d"
+
         # remove mac crap
         find "$d/" -type f -name "._*" -exec rm -f {} \;
 
