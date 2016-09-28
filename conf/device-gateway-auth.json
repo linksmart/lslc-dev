@@ -21,5 +21,22 @@
       "url": "tcp://127.0.0.1:1883",
       "prefix": "/demo-dgw"
     }
+  },
+  "auth": {
+    "enabled": true,
+    "provider": "provider-name",
+    "providerURL": "https://provider-url",
+    "serviceID": "sampleDGW",
+    "basicEnabled": false,
+    "authorization": {
+      "rules": [
+        {
+          "resources": ["/rc","/rest","/dashboard"],
+          "methods": ["GET"],
+          "users": [],
+          "groups": ["fir"]
+        }
+      ]
+    }
   }
 }

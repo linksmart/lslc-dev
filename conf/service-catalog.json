@@ -10,8 +10,5 @@
   },
   "gc": {
     "tunnelingService": "http://localhost:8082/NetworkManager"
-  },
-  "auth": {
-    "enabled": false
   }
 }

@@ -16,8 +16,5 @@
       "endpoint": "http://localhost:8082/sc",
       "ttl": 120
     }
-  ],
-  "auth": {
-    "enabled": false
-  }
+  ]
 }
