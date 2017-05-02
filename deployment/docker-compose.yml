@@ -1,0 +1,22 @@
+version: '3'
+services:
+  service-catalog:
+    build:
+      context: service-catalog
+    ports:
+      - "8082:8082"
+    volumes:
+      - ./service-catalog/data:/data
+      - ./service-catalog/conf:/conf
+
+  resource-catalog:
+    build:
+      context: resource-catalog
+    ports:
+      - "8081:8081"
+    links:
+      - service-catalog
+    volumes:
+      - ./resource-catalog/data:/data
+      - ./resource-catalog/conf:/conf
+      

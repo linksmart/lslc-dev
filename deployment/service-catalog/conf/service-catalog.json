@@ -7,9 +7,9 @@
   "staticDir": "./static",
   "storage": {
     "type": "leveldb",
-    "dsn" "/data"
+    "dsn": "/data/ldb2"
   },
   "gc": {
-    "tunnelingService": "http://localhost:8082/NetworkManager"
+    "tunnelingService": "http://global-connect:8082/NetworkManager"
   }
 }

@@ -1,19 +1,19 @@
 {
   "description": "Standalone Device/Resource Catalog",
   "dnssdEnabled": true,
-  "publicEndpoint": "http://fqdn-of-the-host:8081",
+  "publicEndpoint": "http://resource-catalog:8081",
   "bindAddr": "0.0.0.0",
   "bindPort": 8081,
   "apiLocation": "/rc",
   "staticDir": "./static",
   "storage": {
     "type": "leveldb",
-    "dsn": "/data"
+    "dsn": "/data/ldb2"
   },
   "serviceCatalog": [
     {
       "discover": false,
-      "endpoint": "http://sc:8082/sc",
+      "endpoint": "http://service-catalog:8082/sc",
       "ttl": 120
     }
   ]
