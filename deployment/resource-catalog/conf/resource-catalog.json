@@ -1,7 +1,7 @@
 {
   "description": "Standalone Device/Resource Catalog",
   "dnssdEnabled": true,
-  "publicEndpoint": "http://resource-catalog:8081",
+  "publicEndpoint": "http://localhost:8081",
   "bindAddr": "0.0.0.0",
   "bindPort": 8081,
   "apiLocation": "/rc",

@@ -6,7 +6,7 @@ services:
     ports:
       - "8082:8082"
     volumes:
-      - ./service-catalog/data:/data
+      - ./service-catalog/db:/data
       - ./service-catalog/conf:/conf
 
   resource-catalog:
@@ -17,6 +17,22 @@ services:
     links:
       - service-catalog
     volumes:
-      - ./resource-catalog/data:/data
+      - ./resource-catalog/db:/data
       - ./resource-catalog/conf:/conf
-      
+
+  mosquitto:
+    image: eclipse-mosquitto
+    ports:
+      - "1883:1883"
+      - "8883:8883"     
+
+  device-gateway:
+    build:
+      context: device-gateway
+    ports:
+      - "8080:8080"
+    links:
+      - service-catalog
+      - resource-catalog
+    volumes:
+      - ./device-gateway/conf:/conf

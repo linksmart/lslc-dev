@@ -1,0 +1,25 @@
+{
+  "id": "demo-dgw",
+  "description": "Example Gateway",
+  "publicEndpoint": "http://localhost:8080",
+  "staticDir": "./static",
+  "catalog": [
+    {
+      "discover": false,
+      "endpoint": "http://resource-catalog:8081/rc"
+    }
+  ],
+  "http": {
+    "bindAddr": "0.0.0.0",
+    "bindPort": 8080
+  },
+  "protocols": {
+    "REST": {
+      "location": "/rest"
+    },
+    "MQTT": {
+      "url": "tcp://mosquitto:1883",
+      "prefix": "/demo-dgw"
+    }
+  }
+}
