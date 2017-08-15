@@ -68,7 +68,8 @@ if [ -d "$PWD/static/dashboard" ]; then
     popd >> /dev/null
 else
     pushd "$PWD/static" >> /dev/null
-    git clone https://linksmart.eu/redmine/linksmart-opensource/linksmart-local-connect/dgw-dashboard.git dashboard >> /dev/null
+    git clone https://code.linksmart.eu/scm/lc/dgw-dashboard.git
+#    git clone https://linksmart.eu/redmine/linksmart-opensource/linksmart-local-connect/dgw-dashboard.git dashboard >> /dev/null
     popd >> /dev/null
 fi
 echo_pass

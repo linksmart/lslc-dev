@@ -19,7 +19,8 @@ else
 fi
 
 # get the code
-git clone https://linksmart.eu/redmine/linksmart-opensource/linksmart-local-connect/lslc-core.git 
+git clone https://code.linksmart.eu/scm/lc/lslc-core.git
+#git clone https://linksmart.eu/redmine/linksmart-opensource/linksmart-local-connect/lslc-core.git 
 PROJECT_DIR="${DIR}/lslc-core"
 cd "${PROJECT_DIR}"
 
